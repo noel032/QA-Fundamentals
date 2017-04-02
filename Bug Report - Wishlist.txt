@@ -1,0 +1,37 @@
+Bug Report
+
+Bug Title: Not registered users able to add products to Wishlist
+
+Submitter: Tani Tanev
+
+Date Seen: 02.April.2017 - 17:30
+
+Versions:
+v.2.0
+Windows 10
+Chrome version 57.0.2987.133
+
+Bug Description:
+Not registered users are able to add products to the WishList, contradicts to 2.3.2.4 in the SRS.
+
+Severity: Minor
+
+Steps to Reproduce:
+1. Open Browser
+2. Navigate to Home Page.
+3. Click on Computers category, go to Desktops sub-category.
+4. Select a product (ex. "Digital Storm VANQUISH 3 Custom Performance PC")
+5. Click "Add to wishList" button.
+6. Click on the "Wishlist" link in the header.
+7. Find the added item.
+
+Actual Behavior:
+User without registration able to add products to "Wishlist".
+
+Expected Behavior:
+When a user is unregistered, clicking the "Wishlist" link should show appear empty,
+as per Functional Requirement Specification point 2.3.2.4.
+
+Troubleshooting/Testing Steps Attempted: NA
+
+Workaround: NA
