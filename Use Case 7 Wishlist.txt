@@ -1,0 +1,22 @@
+
+Feature: Registered users should be able to save products to their "Wishlist".
+  As a user, I want to save products in my Wishlist.
+
+Background:
+  Given I navigate to home page
+    And I Log In to my account.
+
+  Scenario: User is able to save a product to the "Wishlist".
+
+    When I browse to a category of products (ex. Electronics -> Cell Phones)
+    And I add a product (ex. HTC One Mini Blue) to my Wishlist by clicking the "Add to Wishlist" button
+    Then I should be able to see the product by clicking on the "Wishlist" link in the header.
+
+Scenario: Each product in the "Wishlist" is a hyperlink to the product page.
+  Background:
+    When I browse to a category of products (ex. Electronics -> Cell Phones)
+    And I add a product (ex. HTC One Mini Blue) to my Wishlist by clicking the "Add to Wishlist" button
+    Then I should be able to see the product by clicking on the "Wishlist" link in the header.
+
+    When I click the picture of the product in the Wishlist
+    Then I should be re-directed to the product page.

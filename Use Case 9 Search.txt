@@ -1,0 +1,15 @@
+
+Feature: User should be able to Search the website by given key words.
+  As a user, I want to be able to Search the website by given keywords.
+
+Background:
+  Given I navigate to home page
+  And I click in the "Search Store" box
+
+  Scenario: User is able to search the website by given keywords.
+
+    When I type "Lenovo"
+    And I click on the SEARCH button
+    Then I should be able to see results containing the keyword "Lenovo".
+
+  

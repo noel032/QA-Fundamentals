@@ -1,0 +1,9 @@
+
+Feature: Customer Service Options
+  As a user, I want to find additional information the company can offer as extra customer care.
+
+  Scenario: User should be able to navigate to the Customer Service section
+   Given I navigate to home page
+    When I scroll to the bottom.
+    Then the Customer Service section should contain the following links.
+    (Search, News, Blog, Recently viewed products, Compare products list, New products)

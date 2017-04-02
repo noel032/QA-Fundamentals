@@ -1,0 +1,15 @@
+
+Feature: User should be able to manage their account preference in the "My Account" section.
+  As a user, I want to be able to manage "My Account" options and preferences.
+
+  Background:
+    Given I navigate to home page
+      And I Log In to my account.
+      And I click the "My Account" Link in the header
+
+  Scenario: User is able to see different "My account" preferences
+
+    When I enter the "My account" page
+    Then I should be able to navigate to the following sub-sections in that order:
+     - Customer info, Addresses, Orders, Downloadable products, Back in stock subscriptions,
+     Reward points, Change password, My product reviews.

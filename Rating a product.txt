@@ -1,0 +1,11 @@
+
+Feature: Unregistered user should be able to leave a product rating.
+  As a guest user, I want to leave a rating on a product on the page.
+
+  Scenario: Guest user is able to leave a product review on the product page.
+   Given I navigate to Home page
+     And I Select a Category and Subcategory (ex. Computers, Desktops).
+     And I click on a product from the list (ex. Lenovo IdeaCentre 600).
+    When The product page loads
+    Then I should be able to click the "Add your review" button
+    And leave a review of the product.

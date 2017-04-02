@@ -1,0 +1,13 @@
+
+Feature: User Registration
+  As a guest user, I want to be able to register in the website, so that I can use fully its functionalities.
+
+Background:
+  Given I navigate to home page
+  and I click the "Register" link in the header of the home page
+
+  Scenario: User is able to register.
+     When the registration page loads
+      And I fill out all required fields (First Name, Last Name, Email, Password, Confirm Password)
+      And I click the Register button on the bottom
+     Then I should see the "Your registration completed" message.
