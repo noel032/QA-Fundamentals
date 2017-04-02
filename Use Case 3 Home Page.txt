@@ -1,0 +1,22 @@
+
+Feature: The Home Page should show secondary navigation with all product categories.
+  As a user, I want to browse products by different product categories.
+
+Background:
+    Given I navigate to Home Page.
+
+Scenario: User is able to see secondary navigation with all product categories.
+    Given I navigate to home page
+     Then I should be able to see all product categories.
+
+Scenario: Subcategories
+     When I hover the mouse over some of the categories (ex. Computers. Electronics),
+     Then I should see a list of subcategories, if available.
+
+Scenario: Product Blocks under the product categories.
+     When I click on the  slider dots in the Product Blocks,
+     Then I should see the Next/Previous slide.
+
+Scenario: News and Community Poll sections available at the bottom.
+     When I scroll to the bottom of the page,
+     Then I should see the News and Community Poll sections available.

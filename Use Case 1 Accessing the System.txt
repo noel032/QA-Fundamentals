@@ -1,0 +1,46 @@
+
+Feature: Leave a product review comment
+  As a user, I want to leave a product review in the product page.
+
+  Scenario: User is able to leave a product review in the product page.
+   Given I navigate to home page
+     And I Select a Category.
+     And I select a product from the list.
+    When The product page loads.
+    Then I should be able to leave a review of the product.
+------------------------------------------
+
+Feature: Filter
+  As a user, I want to use the filter, so that I can limit the selection on the screen.
+
+Background:
+    Given I navigate to home page
+      And I Select a Category "Women".
+
+  Scenario: User is able to filter products only by Max Price.
+
+    When I slide the "Lowest Price" bar to the max value.
+    Then I should see the filtered results.
+
+    Scenario: User is able to filter products only by Max Price.
+
+      When I slide the "Lowest Price" bar to the max value.
+      Then I should be able to slide the "Lowest price" bar back.
+----------------------------------------
+Feature: Check Out
+  As a user, I want to check out the items in the cart, so that I can finish my shopping and pay for the items.
+
+Background: ....
+    Given I navigate to home page
+      And I Select a Category "Women".
+      And I 
+
+  Scenario: ...
+
+    When 
+    Then 
+
+    Scenario: ...
+
+      When 
+      Then 

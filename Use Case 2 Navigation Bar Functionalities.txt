@@ -1,0 +1,62 @@
+
+Feature: Unregistered/Guest user should be able to use different Navigation Bar functionalities.
+
+Background:
+  Given I navigate to home page
+
+Scenario: Currency change
+  As a user, I want to switch between different currencies, so that I can purchase the goods in the currency I wish.
+
+    When I change the currency from the currency list in the header
+    Then I should see all products displayed in the currency of choice.
+
+Scenario: User management (unregistered)
+  As an unregistered user, I want to go the "User management" link, so that I can create and manage my account.
+
+    When I click the "User management" link in the header
+    Then I should see the "Registration" page.
+
+Scenario: User management (registered)
+  As a registered user, I want to go the "User management" link, so that I can manage my account.
+
+    When I click the "User management" link in the header
+    Then I should see "My Account" page.
+
+Scenario: Log In (Registered)
+  As a registered user, I want to go the "Log In" link, so that I can log in to my account.
+
+    When I click the "Log In" link in the header
+    and  I fill in the email and password to log in
+    Then I see the Home Page as a Registered User.
+
+Scenario: Log In (Unregistered)
+  As an unregistered user, I want to go the "Log In" link, so that I can create an account and log into it.
+
+    When I click the "Log In" link in the header
+    and  I click the "Register" button to the left
+    Then I should navigate to the "Registration" Page
+
+Scenario: WishList (Registered)
+  As a registered and logged in user, I want to go the "Wishlist" link, so that I can see the items in it.
+
+    When I click the "Wishlist" link in the header
+    Then I see the products added in my "Wishlist".
+
+Scenario: WishList (Unregistered)
+  As an unregistered user, I want to go the "Wishlist" link, so that I can see the items in it.
+
+    When I click the "Wishlist" link in the header
+    Then I should see 0 products in my "Wishlist".
+
+Scenario: Shopping Cart (Registered)
+  As a registered and logged in user, I want to see the shopping cart on the "Shopping cart" link,
+  so that I can see the items in it.
+
+    When I click the "Shopping cart" link in the header
+    Then I see the products added in my "Shopping cart".
+
+Scenario: Shopping cart (Unregistered)
+  As an unregistered user, I want to go the "Shopping cart" link, so that I can see the items in it.
+
+    When I click the "Shopping cart" link in the header
+    Then I should see 0 products in my "Shopping cart".
