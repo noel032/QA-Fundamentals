@@ -1,0 +1,32 @@
+Bug Report
+
+Bug Title: No "User management" link appears in the header of the page
+
+Submitter: Tani Tanev
+
+Date Seen: 02.April.2017 - 16:30
+
+Versions:
+v.2.0
+Windows 10
+Chrome version 57.0.2987.133
+
+Bug Description:
+No "User management" link appears in the header of the page, as per 2.3.2.2 in the SRS.
+
+Severity: Minor
+
+Steps to Reproduce:
+1. Open Browser
+2. Navigate to Home Page.
+3. Look at the header of the page.
+
+Actual Behavior:
+No "User management" functionality appears.
+
+Expected Behavior:
+"User management" functionality should appear, as per Functional Requirement Specification point 2.3.2.2.
+
+Troubleshooting/Testing Steps Attempted: NA
+
+Workaround: NA

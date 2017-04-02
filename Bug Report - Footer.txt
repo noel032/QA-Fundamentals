@@ -1,0 +1,33 @@
+Bug Report
+
+Bug Title: Product View Comments/Review Section Missing on the Product Page
+
+Submitter: Tani Tanev
+
+Date Seen: 02.April.2017 - 16:15 
+
+Versions:
+v.2.0
+Windows 10
+Chrome Версия 57.0.2987.133
+
+Bug Description: 
+User cannot leave a comment below the product in the Product View page, as per point 2.2.1 in the SRS documentation.
+
+Severity: Minor
+
+Steps to Reproduce:
+1. Open Browser
+2. Navigate to Home Page.
+3. Select Category "Women".
+4. Select product "Printed dress".
+
+Actual Behavior:
+No possibility to leave a product review or comment at the bottom.
+
+Expected Behavior:
+User should be able to leave a product review on the Product Page, as per SRS point 2.2.1.
+
+Troubleshooting/Testing Steps Attempted: NA
+
+Workaround: NA
